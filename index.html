@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>كتابي </title>
+</head>
+<body>
+    <h1> مرحبا في كتابي english</h1>
+    
+    <!-- صورة من نفس المجلد -->
+
+    
+    <!-- صورة من الإنترنت -->
+    <img src="Screenshot_20260929_125438_Canva.jpg" alt="صفحة الاولى  " width="350"    height="350" usemap="#kt">
+  <map name="#kt" >
+    <area shape="rect" coords="20,100,90,250" onclick="playSound('AI Voiceover - dog.mp3')">
+      
+     <area shape="rect" coords="175,100,245,250" onclick="playSound('AI Voiceover - hello.mp3')">
+    <area shape="rect" coords="265,100,330,250"  onclick="playSound('AI Voiceover - hi.mp3')">
+       
+    
+  </map>
+</body>
+  <script>
+function playSound(file) {
+    let audio = new Audio(file);
+    audio.play();
+}
+</script>
+</html>
